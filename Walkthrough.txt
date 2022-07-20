@@ -1,0 +1,32 @@
+----------Project Heirarchy--------
+
+controllers/auth: register,login
+
+controllers/jobs:
+
+getAllJobs
+getJob
+createJob
+updateJob
+deleteJob
+
+routes/auth:
+
+/register , /login post routes
+
+routes/jobs:
+
+app.js:
+
+/api/v1/auth
+
+/api/v1/jobs
+
+
+db/connect.js:
+
+.env:
+Mongoatlas uri
+
+app.js:
+connectDB
