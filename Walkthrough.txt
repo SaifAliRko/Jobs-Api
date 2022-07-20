@@ -19,7 +19,6 @@ routes/jobs:
 app.js:
 
 /api/v1/auth
-
 /api/v1/jobs
 
 
@@ -30,3 +29,33 @@ Mongoatlas uri
 
 app.js:
 connectDB
+--------------------------------
+
+mongoose validation is must to master mongoose
+
+models/Users.js:
+
+new Schema with
+name => String ,req ,minlength3,max50
+email=> / / , match: regular expression, unique,
+password: // / // name min6
+
+
+controllers/auth:
+use statusCodes (created)
+bcryptjs for hashing
+
+register=> 
+name,email,password = req.body
+create hashedPassword const by (see doc bcrypt)
+create new obj (tempUser)
+User.create(tempUser)
+
+------------------------------
+mongoose middleware documentation for pre
+
+models/User.js
+bycrypt to models/User.js
+schema.pre (see from doc)
+
+
