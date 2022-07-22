@@ -80,3 +80,24 @@ getName returns this.name
 
 -createJWT instance 
 -uses this
+--------------------------
+login functionality
+controllers/auth 
+
+login:
+-no email & pass 
+-throw new Badreqerror
+-find user by findOne
+-if no user throw 
+-unauthenticated error
+-create a token
+-send res with username and token
+
+create an instance method for comparing the password
+-in users schema
+-pass one password and then compare it to another already present
+
+in login controllers:
+-is password correct
+- a variable to method
+- if password incorrect throw error
