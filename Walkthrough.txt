@@ -1,5 +1,5 @@
 ----------Project Heirarchy--------
-
+"setting up controllers/routes/env"
 controllers/auth: register,login
 
 controllers/jobs:
@@ -30,7 +30,7 @@ Mongoatlas uri
 app.js:
 connectDB
 --------------------------------
-
+"creating User schema,status code,then adding hash pass using bcrypt to register controller"
 mongoose validation is must to master mongoose
 
 models/Users.js:
@@ -52,10 +52,16 @@ create new obj (tempUser)
 User.create(tempUser)
 
 ------------------------------
+
 mongoose middleware documentation for pre
 
-models/User.js
+=>models/User.js
+-using async func
+-moving the hash
+-updating the field password
+-next middleware
+=>removing hashing from controllers register
 bycrypt to models/User.js
 schema.pre (see from doc)
 
-
+-------------------
