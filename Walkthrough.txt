@@ -52,7 +52,7 @@ create new obj (tempUser)
 User.create(tempUser)
 
 ------------------------------
-
+using pre-hook for hashing
 mongoose middleware documentation for pre
 
 =>models/User.js
@@ -65,3 +65,18 @@ bycrypt to models/User.js
 schema.pre (see from doc)
 
 -------------------
+
+controllers/auth.js
+
+register:
+-jwt sign with user._id,user.name,secret key and then expiresIn
+-send user ojb with username and a token as response
+
+Schema Instance methods:
+create methods on the document itself
+
+models/Users:
+getName returns this.name
+
+-createJWT instance 
+-uses this
